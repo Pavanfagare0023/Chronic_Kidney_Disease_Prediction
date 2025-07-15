@@ -16,10 +16,10 @@ genai.configure(api_key="AIzaSyBC7rQZBUW35PRDe-yZwiIh6naF5xyF4tE")
 model_gen = genai.GenerativeModel("gemini-1.5-flash")
 
 # ------------------ Load Trained Model ------------------
-model = pd.read_pickle(open("C:/Users/fagar/Chronic_Kidney_Disease_Prediction/Dialysis_Status.pkl", 'rb'))
+model = pd.read_pickle(open("https://github.com/Pavanfagare0023/Chronic_Kidney_Disease_Prediction/Dialysis_Status.pkl", 'rb'))
 
 # ------------------ Streamlit UI ------------------
-st.set_page_config(page_title="CKD_Dialysis_Prediction", layout="centered")
+st.set_page_config(page_title="Chronic_Kidney_Disease_Prediction", layout="centered")
 st.title("Chronic_Kidney_Disease_Dialysis_Prediction")
 
 st.write("Provide your test values below to predict dialysis requirement.")
