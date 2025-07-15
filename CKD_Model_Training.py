@@ -8,11 +8,8 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, classification_report
 import pickle
 
-# 1.1 Read the CSV from the original location
-df = pd.read_csv("D:/Gen AI - TQ/Gen-AI project/chronic_kidney_disease.csv")
-
-# 1.2 Save it to your repository folder
-df.to_csv(r"C:/Users/fagar/Chronic_Kidney_Disease_Prediction/chronic_kidney_disease.csv", index=False)
+# 1 Read the CSV from the original location
+df = pd.read_csv("https://github.com/Pavanfagare0023/Chronic_Kidney_Disease_Prediction/tree/main/chronic_kidney_disease.csv")
 
 # 2. Replace missing values represented by '?'
 df.replace("?", np.nan, inplace=True)
@@ -56,6 +53,6 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 # 11. Save trained model
-with open("C:/Users/fagar/Chronic_Kidney_Disease_Prediction/Dialysis_Status.pkl", 'wb') as file:
+with open("https://github.com/Pavanfagare0023/Chronic_Kidney_Disease_Prediction/Dialysis_Status.pkl", 'wb') as file:
     pickle.dump(model, file)
 print("Model saved as Dialysis_Status.pkl")
