@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv("setup.env", override=True)
 
 GEMINI_API_KEY = os.getenv("AIzaSyBC7rQZBUW35PRDe-yZwiIh6naF5xyF4tE")
-genai.configure(api_key=GEMINI_API_KEY)
+genai.configure(api_key="AIzaSyBC7rQZBUW35PRDe-yZwiIh6naF5xyF4tE")
 model_gen = genai.GenerativeModel("gemini-1.5-flash")
 
 # ------------------ Load Trained Model ------------------
