@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import pickle
 
 # 1 Read the CSV from the original location
-df = pd.read_csv("https://github.com/Pavanfagare0023/Chronic_Kidney_Disease_Prediction/tree/main/chronic_kidney_disease.csv")
+df = pd.read_csv("https://github.com/Pavanfagare0023/Chronic_Kidney_Disease_Prediction/chronic_kidney_disease.csv")
 
 # 2. Replace missing values represented by '?'
 df.replace("?", np.nan, inplace=True)
