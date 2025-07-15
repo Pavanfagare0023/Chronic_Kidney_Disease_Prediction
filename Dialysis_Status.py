@@ -19,7 +19,7 @@ model_gen = genai.GenerativeModel("gemini-1.5-flash")
 model = pd.read_pickle(open("https://github.com/Pavanfagare0023/Chronic_Kidney_Disease_Prediction/Dialysis_Status.pkl", 'rb'))
 
 # ------------------ Streamlit UI ------------------
-st.set_page_config(page_title="Chronic_Kidney_Disease_Prediction", layout="centered")
+st.set_page_config(page_title="CKD_Dialysis_Prediction", layout="centered")
 st.title("Chronic_Kidney_Disease_Dialysis_Prediction")
 
 st.write("Provide your test values below to predict dialysis requirement.")
