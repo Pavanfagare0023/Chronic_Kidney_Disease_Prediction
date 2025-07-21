@@ -6,7 +6,7 @@ train_test_split
 LabelEncoder
 accuracy_score
 classification_report
-python-dotenv
+Python-dotenv
 pickle
-streamlit
-google-generativeai
+Streamlit
+Google Generative AI (`gemini-1.5-flash`)
