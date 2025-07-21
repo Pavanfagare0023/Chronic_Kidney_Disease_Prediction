@@ -1,19 +1,7 @@
-This project requires the following Python packages:
-
-- pandas
-- numpy
-- scikit-learn
-- RandomForestClassifier
-- train_test_split
-- LabelEncoder
-- accuracy_score
-- classification_report
-- Python-dotenv
-- pickle
-- Streamlit
-- Google Generative AI 
-
-Install them using:
-
-```bash
-pip install -r requirements.txt
+pandas
+numpy
+scikit-learn
+Python-dotenv
+pickle
+Streamlit
+Google Generative AI 
