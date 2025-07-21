@@ -9,4 +9,4 @@ classification_report
 Python-dotenv
 pickle
 Streamlit
-Google Generative AI (`gemini-1.5-flash`)
+Google Generative AI 
