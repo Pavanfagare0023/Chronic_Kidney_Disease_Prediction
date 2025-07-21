@@ -1,6 +1,12 @@
-streamlit
-google-generativeai
 pandas
 numpy
 scikit-learn
+RandomForestClassifier
+train_test_split
+LabelEncoder
+accuracy_score
+classification_report
 python-dotenv
+pickle
+streamlit
+google-generativeai
