@@ -12,7 +12,7 @@ import pickle
 df = pd.read_csv("https://github.com/Pavanfagare0023/Chronic_Kidney_Disease_Prediction/chronic_kidney_disease.csv")
 
 # 2. Replace missing values represented by '?'
-df.replace("?", np.nan, inplace=True)
+df.replace("?", np.NaN, inplace=True)
 
 # 3. Drop rows with too many missing values
 df.dropna(thresh=10, inplace=True)
@@ -53,6 +53,7 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 # 11. Save trained model
-with open("https://github.com/Pavanfagare0023/Chronic_Kidney_Disease_Prediction/Dialysis_Status.pkl", 'wb') as file:
+with open("Dialysis_Status.pkl", 'wb') as file:
     pickle.dump(model, file)
+    
 print("Model saved as Dialysis_Status.pkl")
